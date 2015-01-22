@@ -1,5 +1,5 @@
 <?php
-
+require_once( 'BFIGitHubPluginUploader.php' );
 /**
 * Plugin Name: Footer-Iventiva	
 * Plugin URI: http://iventiva.com/
@@ -18,6 +18,9 @@ add_action('wp_footer', 'your_function');
 
 
 
+if ( is_admin() ) {
+    new BFIGitHubPluginUpdater( __FILE__, 'armandoaliaga', "footer-iventiva" );
+}
 
 
 /*function child_theme_footer_script() { ?>
