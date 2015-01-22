@@ -12,7 +12,7 @@ require_once( 'BFIGitHubPluginUploader.php' );
 
 
 function your_function() {
-    echo '<p>Nando</p>';
+    echo '<p>Nadoooooo</p>';
 }
 add_action('wp_footer', 'your_function');
 
